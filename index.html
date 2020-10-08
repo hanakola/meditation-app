@@ -6,6 +6,7 @@
     <title>Meditation App</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="app">
       <div class="vid-container">
@@ -13,13 +14,11 @@
           <source src="./video/rain.mp4" type="video/mp4" />
         </video>
       </div>
-
       <div class="time-select">
         <button data-time="120">2 Minutes</button>
         <button data-time="300">5 Minutes</button>
         <button data-time="600">10 Minutes</button>
       </div>
-
       <div class="player-container">
         <audio class="song">
           <source src="./sounds/rain.mp3" />
@@ -57,9 +56,9 @@
             stroke-width="20"
           />
         </svg>
+        <img src="./svg/replay.svg" alt="replay" class="replay" width="30px" />
         <h3 class="time-display">0:00</h3>
       </div>
-
       <div class="sound-picker">
         <button data-sound="./sounds/rain.mp3" data-video="./video/rain.mp4">
           <img src="./svg/rain.svg" alt="rain" />
