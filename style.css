@@ -63,10 +63,19 @@
 
 .vid-container {
   position: fixed;
-  top: 0%;
-  left: 0%;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: -1;
+}
+
+.vid-container video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
 }
 
 .time-select button,
@@ -90,8 +99,8 @@
 
 .sound-picker button {
   border: none;
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   padding: 30px;
 }
@@ -108,22 +117,22 @@
   background: #50b748;
 }
 
-.sound-picker .rain,
-.beach {
-  height: 100%;
-}
-
-.sound-picker .forest {
-  width: 100px;
-  position: relative;
-  top: -20px;
-  left: -20px;
+.sound-picker button:nth-child(4) {
+  background: #a0220c;
 }
 
 @media (max-width: 500px) {
   .app {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+  }
+  .vid-container video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
   }
   .time-select,
   .sound-picker,
@@ -167,10 +176,17 @@
   }
   .sound-picker {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 60px;
   }
   .sound-picker button {
-    margin: 5px;
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+  }
+  .sound-picker button i {
+    position: relative;
+    top: -12px;
+    right: 12px;
   }
 }

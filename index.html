@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meditation App</title>
+    <script
+      src="https://kit.fontawesome.com/e0dc62ea01.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -20,7 +24,7 @@
         <button data-time="600">10 Minutes</button>
       </div>
       <div class="player-container">
-        <audio class="song">
+        <audio loop class="song">
           <source src="./sounds/rain.mp3" />
         </audio>
         <img src="./svg/play.svg" alt="play" class="play" />
@@ -61,13 +65,16 @@
       </div>
       <div class="sound-picker">
         <button data-sound="./sounds/rain.mp3" data-video="./video/rain.mp4">
-          <img src="./svg/rain.svg" alt="rain" class="rain" />
+          <i class="fas fa-cloud-rain fa-2x"></i>
         </button>
         <button data-sound="./sounds/beach.mp3" data-video="./video/beach.mp4">
-          <img src="./svg/beach.svg" alt="beach" class="beach" />
+          <i class="fas fa-sun fa-2x"></i>
         </button>
         <button data-sound="./sounds/birds.mp3" data-video="./video/forest.mp4">
-          <img src="./svg/forest.png" alt="forest" class="forest" />
+          <i class="fas fa-tree fa-2x"></i>
+        </button>
+        <button data-sound="./sounds/fire.mp3" data-video="./video/fire.mp4">
+          <i class="fas fa-fire fa-2x"></i>
         </button>
       </div>
     </div>
